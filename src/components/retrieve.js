@@ -33,7 +33,7 @@ export function Retrieve({ shelves, itemShelf, setItemShelf }) {
             // console.log(itemShelf)
             setShouldNav(false)
             navigate('/retrieval_success')
-            axios.post('http://localhost:4000/test', {shelfID: itemShelf}).then(_ => {
+            axios.post('https://rotatbook.onrender.com/test', {shelfID: itemShelf}).then(_ => {
             }).catch(e => console.log(e))
         }
     }, [itemShelf, shouldNav, navigate])

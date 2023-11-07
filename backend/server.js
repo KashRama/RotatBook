@@ -16,9 +16,9 @@ console.log(`Server is running on port: ${port}`);
 });
 
 app.post('/test', (req, res) => {
-    console.log(req.body)
+    app.locals.shelfID = req.body.shelfID
 })
 
 app.get('/test', (req, res) => {
-    res.json('Here')
+    res.json(app.locals.shelfID)
 })
