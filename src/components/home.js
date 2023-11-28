@@ -13,12 +13,14 @@ function Home({calib, setCalib}) {
         // eslint-disable-next-line
         if (calib == 0){
             setCalib(1)
-            axios.post('https://rotatbook.onrender.com/test', {on: 1}).then(_ => {
+            console.log(calib)
+            axios.post('https://rotatbook.onrender.com/test', {on: 1, shelfID: 1}).then(_ => {
             }).catch(e => console.log(e))
         }
         else{
             setCalib(0)
-            axios.post('https://rotatbook.onrender.com/test', {on: 0}).then(_ => {
+            console.log(calib)
+            axios.post('https://rotatbook.onrender.com/test', {on: 0, shelfID: 1}).then(_ => {
             }).catch(e => console.log(e))
         }
     }    

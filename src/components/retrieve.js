@@ -7,7 +7,7 @@ import { motion } from 'framer-motion';
 import '../css/retrieve.css'
 import '../css/retrieve_valid.css'
 
-export function Retrieve({ shelves, itemShelf, setItemShelf }) {
+export function Retrieve({ shelves, itemShelf, setItemShelf, calib }) {
     const navigate = useNavigate();
     const [inputValue, setInputValue] = useState('');
     const [shouldNav, setShouldNav] = useState(false)
@@ -39,12 +39,12 @@ export function Retrieve({ shelves, itemShelf, setItemShelf }) {
             // console.log(itemShelf)
             setShouldNav(false)
             navigate('/retrieval_success')
-            axios.post('https://rotatbook.onrender.com/test', {shelfID: itemShelf}).then(_ => {
+            axios.post('https://rotatbook.onrender.com/test', {on: calib, shelfID: itemShelf}).then(_ => {
             }).catch(e => console.log(e))
             // await delay(5000);
 
         }
-    }, [itemShelf, shouldNav, navigate])
+    }, [itemShelf, shouldNav, navigate, calib])
   
     return (
       <div id="retrieve">
