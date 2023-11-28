@@ -1,13 +1,13 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import './components.css'
+import { motion } from 'framer-motion';
 
 function InsertItem3({ shelves, setShelves }) {
     const navigate = useNavigate();
     const [inputValue, setInputValue] = React.useState('');
     
   
-    const handleInputChange = (event) => {
+    const handleInputChangeName = (event) => {
       setInputValue(event.target.value);
     }  
   
@@ -17,17 +17,30 @@ function InsertItem3({ shelves, setShelves }) {
 
       navigate("/insertSuccessful")
     }
+
+    const onKeyUpHandler = (e) => {
+        if (e.keyCode === 13) redirectToNewPage()
+    }
   
     return (
-      <div>
-        <label>Enter Item Name:</label>
-        <input
-          type="text"
-          value={inputValue}
-          onChange={handleInputChange}
-        />
-        <button onClick={redirectToNewPage}>Enter</button>
-      </div>
+        <div id="item">
+            <motion.div className="background"
+                initial = {{opacity: 0}}
+                animate = {{opacity: '100%', transition: {duration: 2.2}}}
+                exit = {{x: -window.innerWidth, transition: {duration: 0.5}}}
+            >
+                <div className='wrapper'>
+                    <p className='prompt'>Enter Item Name:</p>
+                    <input
+                        type="text"
+                        value={inputValue}
+                        onChange={handleInputChangeName}
+                        onKeyUp={onKeyUpHandler}
+                    />
+                    <button onClick={redirectToNewPage} className='enter'>Enter</button>
+                </div>
+            </motion.div>
+        </div>
     );
 }
 

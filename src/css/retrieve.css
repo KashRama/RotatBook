@@ -1,0 +1,49 @@
+#retrieve {
+    background-color: #C28500;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+#retrieve .wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+#retrieve .prompt {
+    color: #504538;
+    font-size: 40px;
+    font-weight: 600;
+    margin: 0;
+}
+
+#retrieve input {
+    color: #504538;
+    font-size: 40px;
+    font-weight: 600;
+    width: 450px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #B7A99A;
+    margin-right: 20px;
+    text-align: center;
+}
+
+#retrieve input:focus {
+    outline: none;
+    border-color: #504538;
+}
+
+#retrieve .enter {
+    color: #504538;
+    background: transparent;
+    border: 2px solid;
+    border-radius: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    font-size: 24px;
+    padding: 0 20px;
+    cursor: pointer;
+}
+

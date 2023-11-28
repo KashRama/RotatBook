@@ -1,0 +1,46 @@
+#shelf {
+    display: flex;
+    background-color: #FE8A80;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#shelf .heading {
+    color: #57423F;
+    font-size: 40px;
+    font-weight: 600;
+    margin: 0;
+}
+
+#shelf button {
+    color: #57423F;
+    background: transparent;
+    border: 2px solid #57423F;
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    font-size: 18px;
+    margin: 0 15px;
+    padding: 0 20px;
+    cursor: pointer;
+}
+
+#shelf .item-list {
+    display: flex;
+    /* justify-content: left; */
+    margin: 40px 0;
+    width: 400px;
+    justify-content: center;
+}
+
+#shelf .item-list p {
+    color: #57423F;
+    padding: 10px 25px;
+    margin: 0 10px;
+    background-color: #FEEBD6;
+    border-radius: 20px;
+    font-weight: 800;
+
+}

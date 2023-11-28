@@ -1,0 +1,48 @@
+#insert {
+    background-color: #D7D0AF;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+#insert .wrapper {
+    display: flex;
+}
+
+#insert .prompt {
+    color: #4A4737;
+    font-size: 40px;
+    font-weight: 600;
+    margin: 0;
+}
+
+#insert input {
+    color: #4A4737;
+    font-size: 40px;
+    font-weight: 600;
+    width: 50px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #B0AB99;
+    margin: 0 20px;
+    text-align: center;
+}
+
+#insert input:focus {
+    outline: none;
+    border-color: #4A4737;
+}
+
+#insert .enter {
+    color: #4A4737;
+    background: transparent;
+    border: 2px solid;
+    border-radius: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    font-size: 24px;
+    padding: 0 20px;
+    cursor: pointer;
+}
+

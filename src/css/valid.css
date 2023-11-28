@@ -1,0 +1,28 @@
+#valid {
+    display: flex;
+    background-color: #FE8A80;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#valid .heading {
+    color: #57423F;
+    font-size: 40px;
+    font-weight: 600;
+    margin: 0;
+}
+
+#valid button {
+    color: #57423F;
+    background: transparent;
+    border: 2px solid #57423F;
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    font-size: 18px;
+    margin: 0 15px;
+    padding: 0 20px;
+    cursor: pointer;
+}

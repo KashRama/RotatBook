@@ -19,9 +19,8 @@ import { AnimatePresence } from 'framer-motion';
 function AnimatedRoutes() {
     const location = useLocation();
     const [calib, setCalib] = useState(0)
-    const [shelves, setShelves] = useState([['res'], ['kash'], ['vraj'], ['atharv']])
+    const [shelves, setShelves] = useState([['res'], ['kash'], ['vraj'], ['ath']])
     const [itemShelf, setItemShelf] = useState(0)
-    console.log(shelves)
 
     return (
         <AnimatePresence>

@@ -1,0 +1,28 @@
+#retrieve-valid {
+    display: flex;
+    background-color: #402E32;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#retrieve-valid .heading {
+    color: #D09EA9;
+    font-size: 40px;
+    font-weight: 600;
+    margin: 0;
+}
+
+#retrieve-valid button {
+    color: #D09EA9;
+    background: transparent;
+    border: 2px solid #D09EA9;
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    font-size: 18px;
+    margin: 0 15px;
+    padding: 0 20px;
+    cursor: pointer;
+}
