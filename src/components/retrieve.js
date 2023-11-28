@@ -6,6 +6,7 @@ import axios from 'axios';
 
 
 export function Retrieve({ shelves, itemShelf, setItemShelf }) {
+
     const navigate = useNavigate();
     const [inputValue, setInputValue] = useState('');
     const [shouldNav, setShouldNav] = useState(false)
@@ -35,6 +36,11 @@ export function Retrieve({ shelves, itemShelf, setItemShelf }) {
             navigate('/retrieval_success')
             axios.post('https://rotatbook.onrender.com/test', {shelfID: itemShelf}).then(_ => {
             }).catch(e => console.log(e))
+            // await delay(5000);
+            setTimeout(() => { 
+                axios.post('https://rotatbook.onrender.com/test', {shelfID: 0}).then(_ => {
+                }).catch(e => console.log(e))
+            }, 5000); 
         }
     }, [itemShelf, shouldNav, navigate])
   
