@@ -33,7 +33,7 @@ function AnimatedRoutes() {
                 <Route path='/insertItem4' element={<InsertItem4 shelves={shelves} setShelves={setShelves}/>}></Route>
                 <Route path='/insertSuccessful' element={<InsertSuccessful/>}></Route>
                 <Route path='/invalidID' element={<InvalidID/>}></Route>
-                <Route path='/retrieve' element={<Retrieve shelves={shelves} itemShelf={itemShelf} setItemShelf={setItemShelf} calib={calib}/>}></Route>
+                <Route path='/retrieve' element={<Retrieve shelves={shelves} itemShelf={itemShelf} setItemShelf={setItemShelf}/>}></Route>
                 <Route path='/retrieval_success' element={<RetreivalSuccessful itemShelf={itemShelf}/>}></Route>
                 <Route path='/retrieval_unsuccessful' element={<RetreivalUnsuccessful/>}></Route>
                 <Route path='/storage' element={<Storage/>}></Route>

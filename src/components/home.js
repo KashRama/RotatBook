@@ -14,13 +14,13 @@ function Home({calib, setCalib}) {
         if (calib == 0){
             setCalib(1)
             console.log(calib)
-            axios.post('https://rotatbook.onrender.com/test', {on: 1, shelfID: 1}).then(_ => {
+            axios.post('https://rotatbook.onrender.com/test', {on: 1}).then(_ => {
             }).catch(e => console.log(e))
         }
         else{
             setCalib(0)
             console.log(calib)
-            axios.post('https://rotatbook.onrender.com/test', {on: 0, shelfID: 1}).then(_ => {
+            axios.post('https://rotatbook.onrender.com/test', {on: 0}).then(_ => {
             }).catch(e => console.log(e))
         }
     }    
